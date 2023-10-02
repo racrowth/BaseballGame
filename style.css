@@ -1,0 +1,74 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+    font-size : 20px;
+}
+
+#container {
+    width : 100vw;
+    height : 100vh;
+    display : flex;
+    flex-flow : column;
+    /* justify-content : center; */
+    align-items : center;
+}
+
+#gameBox    {
+    width : 70%;
+    height : 80%;
+    max-width : 50rem;
+    max-height : 500rem;
+    overflow : hidden;
+    background-color : black;
+    color : rgb(66, 66, 254);
+    box-shadow: 0.2rem 0.1rem 0.25rem #bbb;
+    border-radius : 0.3rem;
+    display : block;
+
+    margin : 1rem 0;
+    padding : 1.0rem;
+    line-height : 1.8rem;
+}
+
+#gameBox span {
+    color : #bbb;
+    font-style : italic;
+}
+
+#gameBox #end {
+    color : rgb(237, 51, 51);
+    font-weight : 900;
+}
+
+#inputBox   {
+    width : 70%;
+    height : 2rem;
+    max-width : 50rem;
+    margin : 0;
+    display : flex;
+    justify-content : space-around;
+}
+
+#inputBox input {
+    width : 60%;
+    height : 100%;
+    font-size : 2rem;
+    border-radius : 0.3rem;
+    box-shadow: 0.2rem 0.1rem 0.25rem #bbb;
+}
+
+#submit {
+    height : 100%;
+    width : 4rem;
+    margin : 0 5rem 0 0;
+    border-radius : 0.3rem;
+    border-color : #bbb;
+    box-shadow: 0.2rem 0.1rem 0.25rem #bbb;
+}
+
+#warningMsg {
+    margin : 0.5rem;
+    color : red;
+    font-size : 0.25 rem;
+}
