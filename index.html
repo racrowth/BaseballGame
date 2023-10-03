@@ -10,14 +10,21 @@
     
     <div id="container">
         <div id="gameBox">
-            <span>Hello!<br>
-            This is Baseball game!<br>
-            you have 10 lives!<br>
-            Let's try it!</span>
+            <span>Hello!!<br>
+                This is a Baseball game.<br>
+                <br>
+                Guess the three-digit numbers using 1 ~ 9<br>
+                <br>
+                Strike : correct number and correct digits<br>
+                Ball : correct number but not correct digits<br>
+                <br>
+                you have 10 lives to find the right answer!!<br>
+                <br>
+                Let's roll!</span>
         </div>
         <div id="inputBox">
-            <input type="text" id="inputNumber">
-            <button id="submit">히릿!</button>
+            <input type="text" id="inputNumber" inputmode="numeric" pattern="[0-9]*"/>
+            <button id="submit">Hit!</button>
         </div>
         <div id="warningMsg"></div>
     </div>

@@ -5,6 +5,10 @@
     font-size : 20px;
 }
 
+body {
+    background-color : #999;
+}
+
 #container {
     width : 100vw;
     height : 100vh;
@@ -25,10 +29,11 @@
     box-shadow: 0.2rem 0.1rem 0.25rem #bbb;
     border-radius : 0.3rem;
     display : block;
+    overflow : overlay;
 
     margin : 1rem 0;
     padding : 1.0rem;
-    line-height : 1.8rem;
+    line-height : 1.5rem;
 }
 
 #gameBox span {
@@ -61,7 +66,7 @@
 #submit {
     height : 100%;
     width : 4rem;
-    margin : 0 5rem 0 0;
+    margin : 0 auto 0 1rem;
     border-radius : 0.3rem;
     border-color : #bbb;
     box-shadow: 0.2rem 0.1rem 0.25rem #bbb;

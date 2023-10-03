@@ -71,8 +71,8 @@ function 아까했던숫자인지검사(Arr) {
 
 function 리셋() {
     번호생성();
-    document.getElementById("gameBox").innerHTML = ""
-    inputHistory = []
+    document.getElementById("gameBox").innerHTML = "";
+    inputHistory = [];
 }
 
 function 첫게임확인() {
@@ -121,12 +121,14 @@ document.getElementById("submit").addEventListener("click", function(){
 
     if (strike == 3) {
         document.getElementById("gameBox").innerHTML += `<span id="end">축하합니다! 정답입니다!<span>`;
-        lives = 10;   
+        lives = 10;
+        inputHistory = [];
     }
     
     if (lives == 0) {
         document.getElementById("gameBox").innerHTML += `<span id="end">기회 끝! 아쉽네요! 다시 도전하세요!<span>`;
         lives = 10;
+        inputHistory = [];
     }
 
 })
